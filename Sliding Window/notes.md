@@ -2,14 +2,8 @@
 
 The Sliding window is a problem-solving technique for problems that involve arrays/lists. These problems are easy to solve using a brute force approach in O(n^2) or O(n^3). Using the 'sliding window' technique, we can reduce the time complexity to O(n).
 ------------------
-![](@attachment/Clipboard_2022-04-05-11-44-40.png)
-------------------
 
 '''
-
-{
-  # O(n) solution for finding
-# maximum sum of a subarray of size k
  
  
 def maxSum(arr, k):
@@ -37,8 +31,6 @@ def maxSum(arr, k):
  
     return max_sum
  
- 
-# Driver code
 arr = [1, 4, 2, 10, 2, 3, 1, 0, 20]
 k = 4
 print(maxSum(arr, k))
