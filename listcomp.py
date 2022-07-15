@@ -9,3 +9,9 @@ print(mysquaredlist)
 
 mytuple = ("M", "K", "20") # this is a tuple
 print(type(mytuple))
+
+name, lname, age = mytuple # unpacking tuple into variables
+
+print(name)
+print(lname)
+print(age)
