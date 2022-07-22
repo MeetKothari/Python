@@ -1,0 +1,17 @@
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r = 0, 1 # two pointer sol, left for selling, right for buying
+        maxp = 0 # init the max variable
+        
+        while r < len(prices): # iterate whole array
+            if prices[l] < prices[r]: # as long as profit exists
+                profit = prices[r] - prices[l]  # placeholder for temp
+                maxp = max(maxp, profit)   # is it bigger than the biggest diff?
+            else: 
+                l = r # if not, move l up one
+            r += 1  # increment r through array
+        return maxp # return optimal
+        
+
+# Runtime: 1832 ms, faster than 27.71% of Python3 online submissions for Best Time to Buy and Sell Stock.
+# Memory Usage: 25.1 MB, less than 37.97% of Python3 online submissions for Best Time to Buy and Sell Stock.
