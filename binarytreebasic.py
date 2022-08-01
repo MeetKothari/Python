@@ -38,7 +38,7 @@ class BT (object):
     def postord(self, start, traversal): # postord goes from left -> right -> root
         if start:
             traversal = self.inorder(start.left, traversal)
-            traversal = self.inorder(start.right, traversal)
+            traversal = self.inorder(start.right, traversal
             traversal += (str(start.value) + "-")
         return traversal
 
